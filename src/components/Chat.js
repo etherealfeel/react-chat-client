@@ -77,15 +77,30 @@ const Chat = () => {
             borderRadius: "20px 20px 0 0",
             borderBottom: "2px solid violet",
             backgroundColor: "#fff",
+            marginBottom: "10px"
           }}>
-          <Typography component="h1" variant="h5" fontFamily="'Space Grotesk', sans-serif" sx={{
-             color:"#000", borderRadius:"20px", backgroundColor:"#eaeaea", padding:"5px 15px"
-          }}>
+          <Typography
+            component="h1"
+            variant="h5"
+            fontFamily="'Space Grotesk', sans-serif"
+            sx={{
+              color: "#000",
+              borderRadius: "20px",
+              backgroundColor: "#eaeaea",
+              padding: "5px 15px",
+            }}>
             Room: {params.room}
           </Typography>
-          <Typography component="h1" variant="h5" fontFamily="'Space Grotesk', sans-serif" sx={{
-             color:"#000", borderRadius:"20px", backgroundColor:"#eaeaea", padding:"5px 15px"
-          }}>
+          <Typography
+            component="h1"
+            variant="h5"
+            fontFamily="'Space Grotesk', sans-serif"
+            sx={{
+              color: "#000",
+              borderRadius: "20px",
+              backgroundColor: "#eaeaea",
+              padding: "5px 15px",
+            }}>
             Users: {users}
           </Typography>
           <Button variant="outlined" color="error" onClick={leftRoom}>
@@ -100,7 +115,8 @@ const Chat = () => {
             color: "#fff",
             fontSize: "18px",
             background: "#fff",
-            padding: "32px",
+            padding: "0 32px",
+            "&::-webkit-scrollbar": { display: "none" },
           }}>
           <Messages messages={state} username={params.username} />
         </Box>
@@ -111,7 +127,9 @@ const Chat = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            padding: 5,
+            padding: "20px 30px",
+            margin: "10px 20px 20px 20px",
+            border: "2px solid violet"
           }}>
           <Box position="relative">
             <MoodIcon onClick={() => setOpen(!isOpen)} cursor="pointer" />
