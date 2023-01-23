@@ -38,7 +38,7 @@ const Home = () => {
           <ChatIcon />
         </Avatar>
 
-        <Typography component="h1" variant="h5">
+        <Typography component="h1" variant="h5" fontFamily="'Space Grotesk', sans-serif">
           Join now
         </Typography>
         <Box component="form" sx={{ mt: 3 }}>

@@ -78,13 +78,13 @@ const Chat = () => {
             borderBottom: "2px solid violet",
             backgroundColor: "#fff",
           }}>
-          <Typography component="h1" variant="h5" sx={{
-             color:"#000", borderRadius:"20px", backgroundColor:"#eaeaea", padding:"5px 10px" 
+          <Typography component="h1" variant="h5" fontFamily="'Space Grotesk', sans-serif" sx={{
+             color:"#000", borderRadius:"20px", backgroundColor:"#eaeaea", padding:"5px 15px"
           }}>
             Room: {params.room}
           </Typography>
-          <Typography component="h1" variant="h5" sx={{
-             color:"#000", borderRadius:"20px", backgroundColor:"#eaeaea", padding:"5px 10px"
+          <Typography component="h1" variant="h5" fontFamily="'Space Grotesk', sans-serif" sx={{
+             color:"#000", borderRadius:"20px", backgroundColor:"#eaeaea", padding:"5px 15px"
           }}>
             Users: {users}
           </Typography>

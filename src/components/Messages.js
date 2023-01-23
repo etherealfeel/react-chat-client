@@ -35,10 +35,10 @@ const Messages = ({ messages, username }) => {
             person={itsMe}
             childen={
               <Box padding="5px 10px">
-                <Typography component="h1" variant="h6" fontStyle="italic">
+                <Typography component="h1" variant="h6" fontStyle="italic" fontFamily="'Space Grotesk', sans-serif">
                   {itsMe ? `${user.username} (Me)` : user.username}
                 </Typography>
-                <Typography component="p">{message}</Typography>
+                <Typography component="p" fontFamily="'Space Grotesk', sans-serif">{message}</Typography>
               </Box>
             }
           />
