@@ -35,10 +35,10 @@ const Home = () => {
           backgroundColor: "white",
         }}>
         <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-          <ChatIcon/>
+          <ChatIcon />
         </Avatar>
 
-        <Typography component="h1" variant="h5" textAlign="left">
+        <Typography component="h1" variant="h5">
           Join now
         </Typography>
         <Box component="form" sx={{ mt: 3 }}>
@@ -82,33 +82,6 @@ const Home = () => {
           </Link>
         </Box>
       </Box>
-      {/* <input
-        className={styles.input}
-        type="text"
-        name="username"
-        placeholder="Username *"
-        value={values[USERNAME]}
-        onChange={handleChange}
-        autoComplete="off"
-        required
-        autoFocus
-        fullWith
-      />
-      <input
-        className={styles.input}
-        type="text"
-        name="room"
-        placeholder="Room *"
-        value={values[ROOM]}
-        onChange={handleChange}
-        autoComplete="off"
-        required
-      />
-      <Link onClick={handleClick} to={`/chat?username=${values[USERNAME]}&room=${values[ROOM]}`}>
-        <Button className={styles.button} type="submit">
-          Join room
-        </Button>
-      </Link> */}
     </Container>
   );
 };
