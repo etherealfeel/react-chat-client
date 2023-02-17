@@ -7,7 +7,7 @@ import MoodIcon from "@mui/icons-material/Mood";
 import { Container, Button, Box, Typography, Input } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect(process.env.REACT_APP_HOST);
 
 const Chat = () => {
   const { search } = useLocation();
@@ -89,7 +89,7 @@ const Chat = () => {
               backgroundColor: "#eaeaea",
               padding: "5px 15px",
             }}>
-            Room: {params.room}
+            Room #{params.room}
           </Typography>
           <Typography
             component="h1"
